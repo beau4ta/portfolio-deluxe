@@ -98,7 +98,7 @@ function nextInfo() {
     nextButton2.textContent = "Next";
     prevButton.textContent = "Prev";
     nextButton2.setAttribute("class", "next-button");
-    prevButton.setAttribute("class", "next-button");
+    prevButton.setAttribute("class", "prev-button");
     buttonSection2.setAttribute("class", "button-section");
 
     buttonSection2.append(nextButton2, prevButton);
@@ -115,7 +115,16 @@ function nextInfo() {
         $(".about-section").hide();
         $(".about-section-info").hide();
         $(".next-button").hide();
+        $(".prev-button").hide();
         lastInfo();
+      });
+
+      $(".prev-button").click(function(){
+        $(".about-section").hide();
+        $(".about-section-info").hide();
+        $(".next-button").hide();
+        $(".prev-button").hide();
+        showInfo();
       });
 }
 
@@ -139,7 +148,7 @@ function lastInfo() {
     nextButton3.textContent = "Next";
     prevButton2.textContent = "Prev";
     nextButton3.setAttribute("class", "next-button");
-    prevButton2.setAttribute("class", "next-button");
+    prevButton2.setAttribute("class", "prev-button");
     buttonSection3.setAttribute("class", "button-section");
 
     buttonSection3.append(nextButton3, prevButton2);
@@ -147,4 +156,60 @@ function lastInfo() {
     contactInfoSection.append(contactInfo);
     contactSection.append(contactTitle);
     infoSection.append(contactSection, contactInfoSection, buttonSection3);
+
+    $(".next-button").click(function(){
+        $(".about-section").hide();
+        $(".about-section-info").hide();
+        $(".next-button").hide();
+        $(".prev-button").hide();
+        showResume();
+      });
+
+    $(".prev-button").click(function(){
+        $(".about-section").hide();
+        $(".about-section-info").hide();
+        $(".next-button").hide();
+        $(".prev-button").hide();
+        nextInfo();
+      });
+}
+
+function showResume() {
+
+    var resumeSection = document.createElement("div");
+    var resumeInfoSection = document.createElement("div");
+    var resumeTitle = document.createElement("h1");
+    var resumeLink = document.createElement("a");
+    var resumeInfo = document.createElement("img");
+
+    var prevButton3 = document.createElement("button");
+    var buttonSection4 = document.createElement("div");
+
+    prevButton3.textContent = "Prev";
+    prevButton3.setAttribute("class", "prev-button");
+    buttonSection4.setAttribute("class", "button-section");
+
+    resumeTitle.textContent = "Resume";
+    resumeInfo.src = "resumeSS.png";
+    resumeLink.href = "https://docs.google.com/document/d/17gMRMCYLH5X5xLUvqPVZd0vVnyPHyqlK81p0ww3ilZQ/edit?usp=sharing"
+    resumeTitle.setAttribute("class", "about-section");
+    resumeInfo.setAttribute("class", "resume-img");
+    resumeInfoSection.setAttribute("class", "about-section-info");
+
+    buttonSection4.append(prevButton3);
+
+    resumeLink.append(resumeInfo);
+    resumeSection.append(resumeTitle);
+    resumeInfoSection.append(resumeLink);
+
+    infoSection.append(resumeSection, resumeInfoSection, buttonSection4);
+
+    $(".prev-button").click(function(){
+        $(".about-section").hide();
+        $(".about-section-info").hide();
+        $(".next-button").hide();
+        $(".prev-button").hide();
+        lastInfo();
+      });
+
 }

@@ -152,12 +152,36 @@ header{
     -webkit-text-stroke-width: 1px;
 }
 
+.resume-img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+}
+
+.resume-img:hover{
+    opacity: 80%;
+}
+
 .button-section{
     display: flex;
     justify-content: center;
 }
 
 .next-button{
+    background-color: rgb(6, 172, 44);
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
+    -webkit-text-stroke-color: rgb(134, 255, 123);
+    -webkit-text-stroke-width: 1px;
+}
+
+.prev-button{
     background-color: rgb(6, 172, 44);
     border: rgb(3, 112, 196) solid 5px;
     border-radius: 10px;
