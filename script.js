@@ -59,6 +59,9 @@ function nextInfo() {
     var proj1Info = document.createElement("p");
     var proj2Info = document.createElement("p");
     var proj3Info = document.createElement("p");
+    var repoLink1 = document.createElement("a");
+    var repoLink2 = document.createElement("a");
+    var repoLink3 = document.createElement("a");
 
     var buttonSection2 = document.createElement("div");
     var nextButton2 = document.createElement("button");
@@ -95,6 +98,16 @@ function nextInfo() {
     proj2Info.setAttribute("class", "proj-info");
     proj3Info.setAttribute("class", "proj-info");
 
+    repoLink1.textContent = "Repo Link";
+    repoLink2.textContent = "Repo Link";
+    repoLink3.textContent = "Repo Link";
+    repoLink1.href = "https://github.com/AYYLAM0/Pokedex-project";
+    repoLink2.href = "https://github.com/beau4ta/Best-Weather-24-7";
+    repoLink3.href = "https://github.com/beau4ta/dopeDailyPlanner";
+    repoLink1.setAttribute("class", "repo-link")
+    repoLink2.setAttribute("class", "repo-link")
+    repoLink3.setAttribute("class", "repo-link")
+
     nextButton2.textContent = "Next";
     prevButton.textContent = "Prev";
     nextButton2.setAttribute("class", "next-button");
@@ -106,8 +119,8 @@ function nextInfo() {
     imgLink1.append(proj1Img);
     imgLink2.append(proj2Img);
     imgLink3.append(proj3Img);
-    projOtherSection.append(proj2Title, imgLink2, proj2Info, proj3Title, imgLink3, proj3Info);
-    projInfoSection.append(proj1Title, imgLink1, proj1Info, projOtherSection);
+    projOtherSection.append(proj2Title, imgLink2, proj2Info, repoLink2, proj3Title, imgLink3, proj3Info, repoLink3);
+    projInfoSection.append(proj1Title, imgLink1, proj1Info, repoLink1, projOtherSection);
     projSection.append(projTitle);
     infoSection.append(projSection, projInfoSection, projOtherSection, buttonSection2);
 

@@ -32,6 +32,7 @@ header{
 
 .img-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -47,8 +48,30 @@ header{
     box-shadow: rgb(72, 72, 208) 5px 7px;
 }
 
-.img-beau:hover{
-    opacity: 80%;
+.link-container{
+    display: flex;
+}
+
+.linkedin{
+    background-color: rgb(6, 172, 44);
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
+    -webkit-text-stroke-color: rgb(134, 255, 123);
+    -webkit-text-stroke-width: 1px;
+}
+
+.github{
+    background-color: rgb(6, 172, 44);
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
+    -webkit-text-stroke-color: rgb(134, 255, 123);
+    -webkit-text-stroke-width: 1px;
 }
 
 .btn-container{
@@ -115,6 +138,11 @@ header{
     text-shadow: rgb(0, 145, 255) 3px 3px;
     -webkit-text-stroke-color: rgb(134, 255, 123);
     -webkit-text-stroke-width: 2px;
+    background-color: rgb(6, 172, 44);
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+    margin-bottom: 15px;
 }
 
 .proj-img1{
@@ -150,6 +178,10 @@ header{
     text-shadow: rgb(0, 145, 255) 3px 3px;
     -webkit-text-stroke-color: rgb(134, 255, 123);
     -webkit-text-stroke-width: 1px;
+}
+
+.repo-link{
+    padding-bottom: 20px;
 }
 
 .resume-img{
