@@ -11,8 +11,8 @@ header{
     background-color: rgb(6, 172, 44);
     border: rgb(3, 112, 196) solid 5px;
     border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
     margin: 10px;
-    box-shadow: rgb(72, 72, 208) 5px 7px ;
 }
 
 .header-title{
@@ -25,37 +25,9 @@ header{
     -webkit-text-stroke-width: 2px;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: rgb(6, 172, 44);
-    border: rgb(3, 112, 196) solid 5px;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: rgb(72, 72, 208) 5px 7px ;
-}
-
-.nav-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    text-align: right;
-}
-.nav-link{
-    text-align: right;
-    color: rgb(134, 255, 123);
-    text-decoration: underline;
-}
-
-.nav-link:hover{
-    color: rgb(0, 145, 255);
-    text-decoration: underline;
-}
-
 .main-container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .img-container{
@@ -75,141 +47,123 @@ header{
     box-shadow: rgb(72, 72, 208) 5px 7px;
 }
 
-.about-content{
-    width: 75%;
-    margin-top: 15px;
-    border:solid 5px rgb(3, 112, 196);
-    border-radius: 10px;
-    box-shadow: rgb(72, 72, 208) 5px 7px;
-    padding: 20px;
-    background-color: rgb(6, 172, 44)
-}
-
-.about-title{
-    color: rgb(6, 172, 44);
-    text-shadow: rgb(3, 112, 196) 3px 3px;
-    -webkit-text-stroke-color: rgb(134, 255, 123);
-    -webkit-text-stroke-width: 1px;
-}
-
-.about-p{
-    font-size: larger;
-    color: rgb(51, 200, 68);
-    text-shadow: rgb(6, 172, 44) 2px 2px;
-    font-style: italic;
-    text-indent: 2.0em;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: rgb(134, 255, 123);
-}
-
-
-.main-proj-title{
-    color: rgb(6, 172, 44);
-    text-shadow: rgb(3, 112, 196) 3px 3px;
-    -webkit-text-stroke-color: rgb(134, 255, 123);
-    -webkit-text-stroke-width: 1px;
-    padding: 10px;
-}
-
-.proj-title{
-    padding-top: 10px;
-    color: rgb(6, 172, 44);
-    text-shadow: rgb(3, 112, 196) 3px 3px;
-    -webkit-text-stroke-color: rgb(134, 255, 123);
-    -webkit-text-stroke-width: 1px;
-    text-align: center;
-}
-
-.proj-p{
-    font-size: larger;
-    text-align: center;
-    color: rgb(51, 200, 68);
-    text-shadow: rgb(6, 172, 44) 2px 2px;
-    font-style: italic;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: rgb(134, 255, 123);
-}
-
-.proj-1,
-.proj-2,
-.proj-3{
-    border:solid 5px rgb(3, 112, 196);
-    border-radius: 10px;
-    box-shadow: rgb(72, 72, 208) 5px 7px;
-    margin: 10px;
-    background-color: rgb(6, 172, 44);
-}
-
-.proj-img-1{
-    display: block;
-    margin: auto;
-    width: 70%;
-    border:solid 5px rgb(3, 112, 196);
-    border-radius: 10px;
-    box-shadow: rgb(72, 72, 208) 5px 7px;
-}
-
-.proj-img-1:hover{
+.img-beau:hover{
     opacity: 80%;
 }
 
-.side-proj{
+.btn-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.proj-img-2,
-.proj-img-3{
-    display: block;
-    margin: auto;
-    width: 70%;
-    border:solid 5px rgb(3, 112, 196);
-    border-radius: 10px;
-    box-shadow: rgb(72, 72, 208) 5px 7px;
-}
-
-.proj-img-2:hover{
-    opacity: 80%;
-}
-
-.proj-img-3:hover{
-    opacity: 80%;
-}
-
-.img-text{
-    padding:10px;
-}
-
-footer{
+.start-button{
+    width: 20%;
+    height: 20%;
     background-color: rgb(6, 172, 44);
     border: rgb(3, 112, 196) solid 5px;
     border-radius: 10px;
-    margin: 10px;
-    box-shadow: rgb(72, 72, 208) 5px 7px ;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
+    -webkit-text-stroke-color: rgb(134, 255, 123);
+    -webkit-text-stroke-width: 1px;
 }
 
-.contact-title{
+.start-button:hover{
+    background-color: rgb(0, 145, 255);
+    transform: scale(1.05);
+}
+
+.about-section{
     margin: 10px;
-    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
     color: rgb(6, 172, 44);
     text-shadow: rgb(0, 145, 255) 3px 3px;
     -webkit-text-stroke-color: rgb(134, 255, 123);
     -webkit-text-stroke-width: 2px;
-    text-align: center;
+    background-color: rgb(6, 172, 44);
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
 }
 
-.contact-info{
+.about-section-info{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: x-large;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
+    -webkit-text-stroke-color: rgb(134, 255, 123);
+    -webkit-text-stroke-width: 1px;
+    background-color: rgb(6, 172, 44);
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+}
+
+
+.proj-title{
+    padding: 10px;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
+    -webkit-text-stroke-color: rgb(134, 255, 123);
+    -webkit-text-stroke-width: 2px;
+}
+
+.proj-img1{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+}
+
+.proj-img1:hover{
+    opacity: 80%;
+}
+
+.proj-img2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+}
+
+.proj-img2:hover{
+    opacity: 80%;
+}
+
+.proj-info{
+    padding-top: 10px;
+    font-size: large;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
+    -webkit-text-stroke-color: rgb(134, 255, 123);
+    -webkit-text-stroke-width: 1px;
+}
+
+.button-section{
     display: flex;
     justify-content: center;
 }
 
-.contact-number,
-.contact-email{
-    font-size: larger;
-    text-align: center;
-    color: rgb(51, 200, 68);
-    text-shadow: rgb(6, 172, 44) 2px 2px;
-    font-style: italic;
-    -webkit-text-stroke-width: 0.3px;
+.next-button{
+    background-color: rgb(6, 172, 44);
+    border: rgb(3, 112, 196) solid 5px;
+    border-radius: 10px;
+    box-shadow: rgb(72, 72, 208) 5px 7px;
+    color: rgb(6, 172, 44);
+    text-shadow: rgb(0, 145, 255) 3px 3px;
     -webkit-text-stroke-color: rgb(134, 255, 123);
-    padding: 5px;
+    -webkit-text-stroke-width: 1px;
 }

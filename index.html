@@ -1,94 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beau's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="./styles.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <header class="header">
-        <h1 class="header-title">Beau J. Fortier</h1>
+      <h1 class="header-title">Beau J. Fortier</h1>
     </header>
 
-    <nav class="navbar">
-        <div class="nav-items">
-        <a class="nav-link" href="#Abput">About Me</a>
-        <a class="nav-link" href="#Projects">Projects</a>
-        <a class="nav-link" href="">Resume</a>
-        <a class="nav-link" href="#Contact">Contact Me</a>
-        </div>
-    </nav>
-
     <main class="main-container">
-        <div class="row">
-            <div class="img-container col-md-4">
-                <a href="https://github.com/beau4ta"><img class="img-beau" src="beaufuneral3.JPG" alt="Beau Fortier"></a>
-            </div>
-            <div class="about-container col-md-8">
-                <h1 id="About" class="about-title">About Me:</h1>
-                <div class="about-content">
-                    <p class="about-p">
-                        Hello! My name is Beau Fortier. I am 25 years old and I am learning to become a web developer.
-                        I am building skills in HTML, CSS, JavaScript, JQuery, Bootstrap, Node.js, React.js, MySQL, MongoDB and more!
-                        I am currently a Service Manager at Chipotle Mexican Grill and I have been working there for 4 years. I slowly
-                        climbed my way up the ladder from Crew to Certified Trainer to Kitchen Manager and now Service Manager. As I 
-                        build my web development skills, I am slowly beginning to seek employment opportunities in the field. 
-                        This is a rough draft of my portfolio containing information about me, the projects I have worked on, a link to
-                        my resume, and some contact information.
-                    </p>
-                    <p class="about-p">
-                        Throughout my years, education has been very important to me. After I graduated high school, I went right into college
-                        for summer classes at Lorain County Community College. I attended LCCC for 3 years and earned my Associate of Arts degree.
-                        After earning my degree I decided to go for a BA of Filmmaking at Cleveland State University. I attended CSU for 1 year before
-                        deciding to change my career path. I went back to LCCC for another year to get a Bachelor's in Business Management through the
-                        University Partnership at Kent State University. Again, I decided to change my career path. I left school for about a year until
-                        i figured out what I really wanted to do. After some research and experimenting, I have chosen the path of Full Stack Web Development!
-                        I am now attending Case Western Reserve University's Coding Bootcamp. 
-                    </p>
-                </div>
-            </div>
+      <div class="row">
+        <div class="img-container col-md-4">
+          <a href="https://github.com/beau4ta"
+            ><img class="img-beau" src="beaufuneral3.JPG" alt="Beau Fortier"
+          /></a>
         </div>
-        <div class="row">
-        <div class="col-md-4"></div>
-        <div class="project-container col-md-6 d-flex-column-align-items-center">
-            <h1 id="Projects" class="main-proj-title">Projects:</h1>
-            <div class="proj-1">
-                <a href="https://ayylam0.github.io/Pokedex-project/"><img class="proj-img-1" src="pokedexproj1.png" alt="Project PokeDex"></a>
-                    <h3 class="proj-title">Project PokeDex</h3>
-                    <p class="proj-p">HTML, CSS, JQuery, Bootstrap, APIs</p>
-            </div>
-            <div class="side-proj">
-            <div class="proj-2">
-                <a href="https://beau4ta.github.io/Best-Weather-24-7/"><img class="proj-img-2" src="bestweatherpic.png" alt="Best Weather 24/7"></a>
-                    <h3 class="proj-title">Best Weather</h3>
-                    <p class="proj-p">HTML, CSS, JQuery, Bootstrap, APIs</p>
-            </div>
-            <div class="proj-3">
-                <a href="https://beau4ta.github.io/dopeDailyPlanner/"><img class="proj-img-3" src="dailyplannerSS.png" alt="Daily Planner"></a>
-                    <h3 class="proj-title">Daily Planner</h3>
-                    <p class="proj-p">HTML, CSS, JQuery, Bootstrap</p>
-            </div>
-            </div>
+
+        <div class="btn-container col-md-8">
+          <button class="start-button">Click to Start!</button>
         </div>
-    </div>
+        <div id="info-section" class="col-md-6">
+        </div>
+      </div>
     </main>
 
-    <footer id="Contact">
-        <div class="contact-container">
-            <h1 class="contact-title">Contact Me</h1>
-            <div class="contact-info">
-            <p class="contact-number">440-657-2746</p>
-            <p class="contact-email">beaufortier13@gmail.com</p>
-        </div>
-        </div>
-    </footer>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
