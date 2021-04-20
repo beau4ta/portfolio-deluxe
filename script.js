@@ -84,9 +84,9 @@ function nextInfo() {
     imgLink2.href = "https://beau4ta.github.io/Best-Weather-24-7/"
     imgLink3.href = "https://beau4ta.github.io/dopeDailyPlanner/"
 
-    proj1Img.src = "pokedexproj1.png";
-    proj2Img.src = "bestweatherpic.png";
-    proj3Img.src = "dailyplannerSS.png";
+    proj1Img.src = "assets/pokedexproj1.png";
+    proj2Img.src = "assets/bestweatherpic.png";
+    proj3Img.src = "assets/dailyplannerSS.png";
     proj1Img.setAttribute("class", "proj-img1");
     proj2Img.setAttribute("class", "proj-img2");
     proj3Img.setAttribute("class", "proj-img2");
@@ -203,7 +203,7 @@ function showResume() {
     buttonSection4.setAttribute("class", "button-section");
 
     resumeTitle.textContent = "Resume";
-    resumeInfo.src = "resumeSS.png";
+    resumeInfo.src = "assets/resumeSS.png";
     resumeLink.href = "https://docs.google.com/document/d/17gMRMCYLH5X5xLUvqPVZd0vVnyPHyqlK81p0ww3ilZQ/edit?usp=sharing"
     resumeTitle.setAttribute("class", "about-section");
     resumeInfo.setAttribute("class", "resume-img");
