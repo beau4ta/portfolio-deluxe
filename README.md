@@ -1,5 +1,5 @@
 # Portfolio Deluxe
-This is an updated version of my Web Development Portfolio.
+This is an updated version of my Web Development Portfolio. This version is a complete revamp from the last one. Everything is different.
 
 ## Purpose
 This application is an interactive portfolio made to showcase the 
