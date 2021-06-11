@@ -50,18 +50,23 @@ function nextInfo() {
     var proj1Title = document.createElement("h2");
     var proj2Title = document.createElement("h2");
     var proj3Title = document.createElement("h2");
+    var proj4Title = document.createElement('h2');
     var imgLink1 = document.createElement("a");
     var imgLink2 = document.createElement("a");
     var imgLink3 = document.createElement("a");
+    var imgLink4 = document.createElement("a");
     var proj1Img = document.createElement("img");
     var proj2Img = document.createElement("img");
     var proj3Img = document.createElement("img");
+    var proj4Img = document.createElement("img");
     var proj1Info = document.createElement("p");
     var proj2Info = document.createElement("p");
     var proj3Info = document.createElement("p");
+    var proj4Info = document.createElement("p");
     var repoLink1 = document.createElement("a");
     var repoLink2 = document.createElement("a");
     var repoLink3 = document.createElement("a");
+    var repoLink4 = document.createElement("a");
 
     var buttonSection2 = document.createElement("div");
     var nextButton2 = document.createElement("button");
@@ -74,39 +79,49 @@ function nextInfo() {
     projTitle.setAttribute("class", "about-section");
 
     proj1Title.textContent = "Project PokeDex";
-    proj2Title.textContent = "Best Weather";
-    proj3Title.textContent = "Daily Planner";
+    proj2Title.textContent = "MVC TechBlog";
+    proj3Title.textContent = "Best Weather 24/7";
+    proj4Title.textContent = "Employee Scheduler";
     proj1Title.setAttribute("class", "proj-title");
     proj2Title.setAttribute("class", "proj-title");
     proj3Title.setAttribute("class", "proj-title");
+    proj4Title.setAttribute("class", "proj-title");
 
     imgLink1.href = "https://ayylam0.github.io/Pokedex-project/"
-    imgLink2.href = "https://beau4ta.github.io/Best-Weather-24-7/"
-    imgLink3.href = "https://beau4ta.github.io/dopeDailyPlanner/"
+    imgLink2.href = "https://radiant-dusk-82859.herokuapp.com/"
+    imgLink3.href = "https://beau4ta.github.io/Best-Weather-24-7/"
+    imgLink4.href = "https://employee-scheduler-project.herokuapp.com/"
 
     proj1Img.src = "assets/pokedexproj1.png";
-    proj2Img.src = "assets/bestweatherpic.png";
-    proj3Img.src = "assets/dailyplannerSS.png";
+    proj2Img.src = "assets/techSS1.png";
+    proj3Img.src = "assets/bestweatherpic.png";
+    proj4Img.src = "assets/employeeSS1.png";
     proj1Img.setAttribute("class", "proj-img1");
     proj2Img.setAttribute("class", "proj-img2");
     proj3Img.setAttribute("class", "proj-img2");
+    proj4Img.setAttribute("class", "proj-img1");
 
     proj1Info.textContent = "HTML, CSS, JQuery, Bootstrap, APIs";
-    proj2Info.textContent = "HTML, CSS, JQuery, Bootstrap, APIs";
-    proj3Info.textContent = "HTML, CSS, JQuery, Bootstrap";
+    proj2Info.textContent = "Node, MySQL/Sequelize, Express, Handlebars";
+    proj3Info.textContent = "HTML, CSS, JQuery, Bootstrap, APIs";
+    proj4Info.textContent = "Node, MySQL/Sequelize, Express, Handlebars";
     proj1Info.setAttribute("class", "proj-info");
     proj2Info.setAttribute("class", "proj-info");
     proj3Info.setAttribute("class", "proj-info");
+    proj4Info.setAttribute("class", "proj-info");
 
     repoLink1.textContent = "Repo Link";
     repoLink2.textContent = "Repo Link";
     repoLink3.textContent = "Repo Link";
+    repoLink4.textContent = "Repo Link";
     repoLink1.href = "https://github.com/AYYLAM0/Pokedex-project";
-    repoLink2.href = "https://github.com/beau4ta/Best-Weather-24-7";
-    repoLink3.href = "https://github.com/beau4ta/dopeDailyPlanner";
+    repoLink2.href = "https://github.com/beau4ta/MVC-TechBlog";
+    repoLink3.href = "https://github.com/beau4ta/Best-Weather-24-7";
+    repoLink4.href = "https://github.com/beau4ta/employee-scheduler-project";
     repoLink1.setAttribute("class", "repo-link")
     repoLink2.setAttribute("class", "repo-link")
     repoLink3.setAttribute("class", "repo-link")
+    repoLink4.setAttribute("class", "repo-link")
 
     nextButton2.textContent = "Next";
     prevButton.textContent = "Prev";
@@ -119,8 +134,9 @@ function nextInfo() {
     imgLink1.append(proj1Img);
     imgLink2.append(proj2Img);
     imgLink3.append(proj3Img);
+    imgLink4.append(proj4Img);
     projOtherSection.append(proj2Title, imgLink2, proj2Info, repoLink2, proj3Title, imgLink3, proj3Info, repoLink3);
-    projInfoSection.append(proj1Title, imgLink1, proj1Info, repoLink1, projOtherSection);
+    projInfoSection.append(proj1Title, imgLink1, proj1Info, repoLink1, proj4Title, imgLink4, proj4Info, repoLink4, projOtherSection);
     projSection.append(projTitle);
     infoSection.append(projSection, projInfoSection, projOtherSection, buttonSection2);
 
